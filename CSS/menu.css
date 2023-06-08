@@ -83,9 +83,19 @@
 }
 
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
     .menu__header {
        flex-wrap: nowrap;
+    }
+
+    .menu__title {
+        font-weight: bold;
+        display: flex;
+        margin-left: 1rem;
+        margin-right: 1rem; 
+        width: 13rem;
+        letter-spacing: 2px;
+        min-width: 12rem;
     }
 
     .check__btn {
@@ -97,7 +107,7 @@
     }
 } 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     .menu__header {
         flex-direction: row; 
         border: none; 
@@ -114,13 +124,19 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .menu__header{         
+    .menu__header {         
         flex-wrap: wrap;
         right: 0%;
+    }
+
+    .menu__nav {
+        display: flex;
+        justify-content: space-between;
     }
     
     .menu__list {
         display: flex;
+        flex-wrap: wrap
     }
      
     .menu__list__item__contato {

@@ -78,7 +78,7 @@ select:focus {
     color: var(--color-hover);
 }
 
-@media screen and (max-width: 380) {
+@media screen and (max-width: 480px) {
     body {
         box-sizing: border-box;
         background-color: var(--color-de-fondo);
@@ -90,15 +90,27 @@ select:focus {
         max-width: 100rem;
     }
 
+    ul {
+        margin: 10px;
+        padding: 5px;
+    }
+
     .todo {
         padding-left: 1%;
         padding-right: 6%;            
     }
 }
 
+@media screen and (min-width: 768px) {
+    ul {
+        margin: 10px;
+        padding: 5px;
+    }
+}
 
 
-@media screen and (min-width: 1440) {
+
+@media screen and (min-width: 1440px) {
     .todo {
         padding-left: 1%;
         padding-right: 6%;      
