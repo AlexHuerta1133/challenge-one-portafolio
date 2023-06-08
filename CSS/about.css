@@ -1,0 +1,16 @@
+.about {
+    background-color: var(--color-de-fondo-2);
+    margin-top: 50px;
+}
+
+.about__container {
+    margin: 40px;
+    margin-top: 70px;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 16px;
+}
+
+.about__paragraph {
+    font-family: var(--raleway);
+}

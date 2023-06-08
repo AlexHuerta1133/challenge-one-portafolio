@@ -1,0 +1,106 @@
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --color-de-fondo: #F5F5F5;
+    --color-de-link: #000;
+    --color-azul: #2A7AE4;
+    --color-gris: #464646;
+    --color-hover: #FFD966;
+    --color-de-fondo-2: #EAF2FD;
+    --background-fondo: #fbfbfb;
+    --raleway: 'Raleway', sans-serif;
+    --Open-Sans: "Open Sans", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-de-fondo);
+    font-family: var(--raleway);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    width: 100vw;
+    max-width: 100rem;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+ul {
+    margin: 20px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+
+/*Mobile First*/
+.todo  {
+    margin: 0 16px 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 9rem;
+    padding-left: 3%;
+    padding-right: 3%;  
+}
+
+.conteiner {
+    padding-left: 1%;
+    padding-right: 6%;  
+}
+
+.title--encabezado {
+    font-weight: 700;
+    line-height: 90px;
+    width: 97vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 1rem 0 0 0;
+    font-size: 30px;
+    font-family: var(--Open-Sans);
+}
+
+.title--encabezado:hover {
+    color: var(--color-hover);
+}
+
+@media screen and (max-width: 380) {
+    body {
+        box-sizing: border-box;
+        background-color: var(--color-de-fondo);
+        font-family: var(--raleway);
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        width: 100vw;
+        max-width: 100rem;
+    }
+
+    .todo {
+        padding-left: 1%;
+        padding-right: 6%;            
+    }
+}
+
+
+
+@media screen and (min-width: 1440) {
+    .todo {
+        padding-left: 1%;
+        padding-right: 6%;      
+    }
+}

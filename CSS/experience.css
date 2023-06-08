@@ -1,0 +1,222 @@
+.experience {
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: var(--color-de-fondo);
+    margin: 0;
+    padding: 0 1rem 0 0;
+}
+
+.experience__box  {
+    margin: 0 7px 49px 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.experiencia__box  {
+    margin: 0 7px 49px 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.experience__img-encrip, .experience__img {
+    display: flex;
+    width: 64%;
+    height: 90%;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 25px 15% 33px;
+    gap: 1rem;
+}
+
+.experience__description {
+    display: flex;
+}
+
+
+.experiencia__boton--repo {
+    appearance: button;
+    background-color: var(--color-azul);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: var(--color-de-fondo);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.experiencia__boton--repo:after {
+    background-clip: padding-box;
+    background-color: var(--color-azul);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.experiencia__boton--repo:main,
+.experiencia__boton--repo:focus {
+    user-select: auto;
+}
+
+.experiencia__boton--repo:hover:not(:disabled) {
+    filter: brightness(1.1);
+    background-color: var(--color-hover);
+    color: var(--color-de-link);
+}
+
+.experiencia__boton--repo:disabled {
+    cursor: auto;
+}
+
+.experiencia__boton--repo:active:after {
+    border-width: 0 0 0px;
+}
+
+.experiencia__boton--repo:active {
+    padding-bottom: 10px;
+}
+
+.experience__boton--demo {
+    appearance: button;
+    background-color: var(--color-azul);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: var(--color-de-fondo);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.experience__boton--demo:after {
+    background-clip: padding-box;
+    background-color: var(--color-azul);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.experience__boton--demo:main,
+.experience__boton--demo:focus {
+    user-select: auto;
+}
+
+.experience__boton--demo:hover:not(:disabled) {
+    filter: brightness(1.1);
+    background-color: var(--color-hover);
+    color: var(--color-de-link);
+}
+
+.experience__boton--demo:disabled {
+    cursor: auto;
+}
+
+.experience__boton--demo:active:after {
+    border-width: 0 0 0px;
+}
+
+.experience__boton--demo:active {
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .experience {
+        display: block;
+    }
+
+    .experience__box {
+        flex-wrap: wrap;
+    }
+
+    .experiencia__box {
+        flex-wrap: wrap;
+    }
+
+    .experience__img {
+        width: 80vw;
+    }
+
+    .experience__img-encrip {
+        width: 80vw; 
+    }
+
+    .experience__info {
+        margin: 10% 0 12% 17px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .experience {
+        display: block;
+    }
+    
+    .experience__box {
+        flex-wrap: wrap;
+    }
+
+    .experiencia__box {
+        flex-wrap: wrap;
+    }
+    
+    .experience__img {
+        width: 80vw;
+    }
+
+    .experience__img-encrip {
+        width: 80vw; 
+    }
+
+    .experience__info {
+        margin: 10% 0 12% 17px;
+    }
+
+}

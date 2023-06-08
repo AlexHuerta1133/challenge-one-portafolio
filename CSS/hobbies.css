@@ -1,0 +1,35 @@
+.hobbies {
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: var(--color-de-fondo);
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hobbies__box {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    background-color: var(--color-de-fondo-2);
+    width: 129px;
+    height: 110px;
+    margin: 15px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.hobbies__box:hover {
+    background-color: var(--color-hover);
+}
+
+.hobbies__img {
+    width: 70%;
+}

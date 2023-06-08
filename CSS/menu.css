@@ -1,0 +1,129 @@
+.menu__header {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--color-azul);
+    left: 0;
+    top: 0;
+    right: 0;
+    max-width: 100rem;
+    position: absolute; 
+    color: var(--color-de-link);
+    padding: 0 10px 0 5px;
+}
+
+.menu__conteiner {
+    padding-right: 10px;
+}
+
+.logo {
+    margin: 1rem;
+    padding: 0;
+}
+
+.menu__title {
+    font-weight: bold;
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    width: 13rem;
+    letter-spacing: 2px;
+    min-width: 12rem;
+}
+
+.nav__bar {
+    display: none;
+}
+
+.menu__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__list {
+    display: flex;
+    font-weight: bolder;
+    margin-left: 1rem;
+    gap: 10px;
+}
+
+.nav__bar {
+    display: none;
+}
+
+.check__btn {
+    display: none;
+}
+
+.menu__list__item {
+    display: flex;    
+    list-style: none;
+    color: var(--color-de-fono);
+    margin-right: 0.75rem;
+    text-decoration: none;
+}
+
+.menu__list__link {
+    font-size: 0.8rem;
+    padding-right: 0.5rem;
+    min-width: 5rem;
+    text-decoration: none;
+    
+}
+
+.menu__list__link:hover {
+    color: var(--color-hover);
+    text-decoration: underline;
+
+}
+
+.menu__list__item__contato {
+    display: flex;  
+    
+}
+
+
+@media screen and (max-width: 380px) {
+    .menu__header {
+       flex-wrap: nowrap;
+    }
+
+    .check__btn {
+        color: var(--color-de-fondo);
+    }
+
+    .menu__list__item__contato {
+        order: -1;
+    }
+} 
+
+@media screen and (max-width: 760px) {
+    .menu__header {
+        flex-direction: row; 
+        border: none; 
+    }
+    
+    .menu__list__item  {
+        display: none;
+    }
+
+    .menu__list__item__contato {
+        order: -1;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .menu__header{         
+        flex-wrap: wrap;
+        right: 0%;
+    }
+    
+    .menu__list {
+        display: flex;
+    }
+     
+    .menu__list__item__contato {
+        order: 1;
+    }
+}
